@@ -36,7 +36,8 @@ img {
     max-width: 100%;
     display: block;
 }
-.contenedor {
+
+[class$="__contenedor"] {
     max-width: 120rem;
     margin: 0 auto;
     width: 90%;
@@ -53,6 +54,7 @@ img {
 @media (min-width: 768px) {
     .header {
         background-size: 60rem;
+        height: 100vh;
     }
 }
 @media (min-width: 992px) {
@@ -64,11 +66,6 @@ img {
     .header {
         background-size: 100rem;
     }
-}
-.header__contenedor {
-    max-width: 120rem;
-    margin: 0 auto;
-    width: 90%;
 }
 @media (min-width: 768px) {
     .header__barra {
@@ -144,4 +141,43 @@ img {
         gap: 4rem;
         align-items: center;
     }
+}
+
+/*Main*/
+.nucleus {
+    margin-top: 3rem;
+}
+.nucleus__heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.nucleus__grid {
+    display: flex;
+    flex-direction: column-reverse;
+}
+@media (min-width: 768px) {
+    .nucleus__grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+        align-items: center;
+    }
+}
+.listado__elemento {
+    box-shadow: 0px 0px 20px 5px rgb(0 0 0 / 0.15);
+    padding: 2rem;
+    margin-bottom: 5rem;
+    transition: transform 0.35s;
+}
+.listado__elemento:hover {
+    transform: scale(1.1);
+}
+.listado__heading {
+    color: var(--primario);
+    margin: 0;
+    font-size: 3rem;
+}
+.listado__texto {
+    margin: 0;
+    font-size: 2rem;
 }
