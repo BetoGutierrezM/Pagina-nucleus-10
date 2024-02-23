@@ -9,10 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/normalize.css" as="stylesheet">
+    <link rel="preload" href="css/styles.css" as="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" as="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" as="stylesheet">
 
     <link rel="icon" href="img/logo.svg">
+
+    <link rel="preload" href="img/header_bg.svg" as="image">
+    <link rel="preload" href="img/app_1.svg" as="image">
+    <link rel="preload" href="img/logo.svg" as="image">
     <!-- HTML Meta Tags -->
     <title>Nucleus - eWallet </title>
     <meta name="description"
@@ -46,7 +52,7 @@
         <div class="header__contenedor">
             <div class="header__barra">
                 <div class="header__logo">
-                    <img src="img/logo.svg" alt="logo Nucleus" width="auto" height="auto">
+                    <img src="img/logo.svg" alt="logo Nucleus" width="250" height="250">
                     <!--width="100" height="100"-->
                 </div>
                 <nav class="navegacion">
@@ -76,7 +82,7 @@
         <div class="nucleus__contenedor">
             <div class="nucleus__grid">
                 <div class="nucleus__image">
-                    <img src="img/app_2.svg" alt="imagen app nucleus">
+                    <img src="img/app_2.svg" alt="imagen app nucleus" loading="lazy">
                 </div>
 
                 <div class="listado">
@@ -122,7 +128,7 @@
                 </div> <!--fin listado-->
 
                 <div class="seguridad__imagen">
-                    <img src="img/seguridad.png" alt="imagen seguridad nucleus">
+                    <img src="img/seguridad.png" alt="imagen seguridad nucleus" loading="lazy">
                 </div> <!--fin seguridad__imagen-->
             </div> <!--fin seguridad grid-->
 
@@ -153,7 +159,7 @@
                     </div> <!--fin listado-->
                 </div> <!--fin comisiones contenido-->
                 <div class="comisiones__imagen">
-                    <img src="img/app_3.svg" alt="app gastos Nucleus">
+                    <img src="img/app_3.svg" alt="app gastos Nucleus" loading="lazy">
                 </div>
             </div> <!--fin comisiones contenido-->
     </section> <!--fin comisiones-->
@@ -195,7 +201,7 @@
         <div class="footer__contenedor">
             <div class="footer__grid">
                 <div class="footer__logo">
-                    <img src="img/logo-blanco.svg" alt="logo blanco de nucleus">
+                    <img src="img/logo-blanco.svg" alt="logo blanco de nucleus" loading="lazy">
                 </div>
                 <nav class="navegacion">
                     <a href="#" class="navegacion__link navegacion__link--blanco">¿Qué es?</a>
