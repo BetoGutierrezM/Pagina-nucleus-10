@@ -161,18 +161,19 @@ img {
 .navegacion__link {
     color: var(--primario);
 }
-
 @media (min-width: 768px) {
     .navegacion__link {
         color: var(--blanco);
     }
-
     .header__grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
         align-items: center;
     }
+}
+.navegacion__link--blanco {
+    color: var(--blanco);
 }
 
 /*Main*/
@@ -361,4 +362,26 @@ img {
     color: var(--primario);
     font-weight: 700;
     text-align: right;
+}
+
+/*footer css*/
+.footer {
+    background-color: #5A30A0;
+    padding: 3rem 0;
+}
+@media (min-width: 768px) {
+    .footer__grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
+@media (min-width: 768px) {
+    .footer__logo {
+        margin: 0;
+    }
 }
